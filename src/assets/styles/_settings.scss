@@ -1,0 +1,18 @@
+@use "sass:color";
+
+//fonts
+$font-family-sans-serif: "PPMori-SemiBold", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+  "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-regular: "PPMori-Regular";
+$font-family-light: "PPMori-Extralight";
+//colors
+$primary: #F8F4E9;
+$secondary: #404040;
+//Carousel
+$carousel-indicator-height: 12px;
+$carousel-indicator-width: 12px;
+$carousel-indicator-active-bg: $secondary;
+//USAR VARIABLES BOOTSTRAP PARA QUERYS
+//$mqMinWidth: 420px;
+

@@ -1,27 +1,94 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>UOC Boilerplate</title>
+</head>
+
+<body id="home">
+  <nav>
+    <include src="./views/header.html"></include>
+  </nav>
+  <main>
+    <section>
+      <div class="gridportada">
+        <div class="gridportada__box1 scrollingtext">
+
+          <div class="scrollingtext__wrappertexto">
+            <div class="scrollingtext__wrappertexto__tracker">
+              <div class="scrollingtext__wrappertexto__elemento">&nbsp;OLÉ&nbsp;&nbsp;</div>
+              <div class="scrollingtext__wrappertexto__elemento">&nbsp;オレ&nbsp;&nbsp;</div>
+              <div class="scrollingtext__wrappertexto__elemento">&nbsp;奥莱&nbsp;&nbsp;</div>
+              <div class="scrollingtext__wrappertexto__elemento">&nbsp;oʊ.le&nbsp;&nbsp;</div>
+              <div class="scrollingtext__wrappertexto__elemento">&nbsp;OLÉ&nbsp;&nbsp;</div>
+              <div class="scrollingtext__wrappertexto__elemento">&nbsp;オレ&nbsp;&nbsp;</div>
+              <div class="scrollingtext__wrappertexto__elemento">&nbsp;奥莱&nbsp;&nbsp;</div>
+              <div class="scrollingtext__wrappertexto__elemento">&nbsp;oʊ.le&nbsp;&nbsp;</div>
+              <div class="scrollingtext__wrappertexto__elemento">&nbsp;OLÉ&nbsp;&nbsp;</div>
+              <div class="scrollingtext__wrappertexto__elemento">&nbsp;オレ&nbsp;&nbsp;</div>
+              <div class="scrollingtext__wrappertexto__elemento">&nbsp;奥莱&nbsp;&nbsp;</div>
+              <div class="scrollingtext__wrappertexto__elemento">&nbsp;oʊ.le&nbsp;&nbsp;</div>
+              <div class="scrollingtext__wrappertexto__elemento">&nbsp;OLÉ&nbsp;&nbsp;</div>
+              <div class="scrollingtext__wrappertexto__elemento">&nbsp;オレ&nbsp;&nbsp;</div>
+              <div class="scrollingtext__wrappertexto__elemento">&nbsp;奥莱&nbsp;&nbsp;</div>
+              <div class="scrollingtext__wrappertexto__elemento">&nbsp;oʊ.le&nbsp;&nbsp;</div>
+            </div>
+          </div>
+        </div>
+        <div class="gridportada__box2">
+          <h1>JORNADAS DE COCINA TRADICIONAL ESPAÑOLA E INTERNACIONAL</h1>
+        </div>
+        <div class="gridportada__box3 animarup">
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/src/assets/images/paella-comidas-tradicionales.png" class="d-block w-100"
+                  alt="Paella plato tradicional">
+              </div>
+              <div class="carousel-item">
+                <img src="/src/assets/images/plato-ramen-comida-tradicional.png" class="d-block w-100"
+                  alt="Ramen comida tradicional">
+              </div>
+              <div class="carousel-item">
+                <img src="/src/assets/images/arroz-al-horn-comidas-tradicionales.png" class="d-block w-100"
+                  alt="Arroz al horno comida tradicional">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="gridportada__box4 animarleft">
+          <div><span class="gridportada__box4__date">29</span></div>
+          <div><span class="gridportada__box4__date">05</span></div>
+          <div><span class="gridportada__box4__date">25</span></div>
+        </div>
+      </div>
+
+    </section>
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+  </main>
+  <script type="module" src="./assets/scripts/main.ts"></script>
+</body>
+
 </html>

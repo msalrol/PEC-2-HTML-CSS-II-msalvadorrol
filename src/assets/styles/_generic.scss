@@ -1,0 +1,39 @@
+@import "settings";
+
+* {
+  box-sizing: border-box;
+}
+
+html{
+  padding:0;
+  margin:0;
+  font-family: $font-family-sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+section{
+  padding: 1rem 2.2rem;
+
+  @include media-breakpoint-down(md) { 
+    padding: 1rem 1.2rem
+  }
+}
+
+h2,h3,h4{
+  margin-bottom:0;
+
+}
+

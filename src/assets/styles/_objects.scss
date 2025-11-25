@@ -1,0 +1,59 @@
+@import "settings";
+
+//* #TAG *//
+.tag{
+    width:fit-content;
+    padding:5px 7px;
+    color:#F8F4E9;
+    background-color:$secondary;
+    border-radius:20px;
+    font-family: $font-family-regular;
+    font-size:15px;
+    z-index:99;
+    
+}
+
+
+//* #CONTENEDOR CIRCULAR *//
+.contenedorcircular{
+    position: relative;
+    width:220px;
+    height:220px;
+    margin-bottom:10px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: -12px 18px 25px -4px rgb(black, 0.3);
+
+    /* stylelint-disable-next-line selector-nested-pattern */
+    img{
+      position:absolute;
+      transform:translate(-2%, -2%);
+      width: 105%;
+      height: 105%;    
+      object-fit: cover; 
+      display: block;
+    }
+
+}
+
+
+// *#ANIMACIONES* //
+.animarup{
+    opacity:0;
+    transform: translateY(20px)
+}
+
+.animarleft{
+    opacity:0;
+    transform: translateX(20px);
+}
+
+.animated{
+    animation: 25s linear infinite rotar;
+}
+
+@keyframes rotar{
+    from {transform: rotate(0deg)};
+    to {transform: rotate(360deg)}
+}
+
